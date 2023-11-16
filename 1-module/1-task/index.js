@@ -1,3 +1,9 @@
 function factorial(n) {
-  // ваш код...
+  let res = 1
+  for (let i = 1; i <= n; i++){
+    res = res * i
+  }
+  return res
 }
+
+console.log(factorial(1))
