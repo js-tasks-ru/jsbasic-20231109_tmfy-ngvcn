@@ -1,12 +1,6 @@
 function filterRange(arr, a, b) {
-  res = [];
-  for(let i = 0; i < arr.length; i++) {
-    if(a <= arr[i] && arr[i] <= b) res.push(i);
-  }
-  return res.sort(function(a, b) {
-    if(a < b) return 1;
-    if(a > b) return -1;
-    if(a == b) return 0;
-  }
-  );
+  return arr.filter(function (i) {
+    if(a <= i && b >= i) return true;
+    else return false;
+  });
 }
